@@ -1,0 +1,24 @@
+{
+  "name": "medc-community",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BulbDigital/MEDC-Community.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BulbDigital/MEDC-Community/issues"
+  },
+  "homepage": "https://github.com/BulbDigital/MEDC-Community#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.1"
+  }
+}
