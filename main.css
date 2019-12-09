@@ -30,6 +30,12 @@
 .medc-form-header-card {
   margin: 1.8rem 0; }
 
+.medc-form-header-actions {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
 .medc-form-card {
   padding: 2rem;
   background: white;
@@ -39,6 +45,39 @@
   .medc-form-card__title {
     font-weight: 300;
     margin-bottom: 1.2rem; }
+
+.medc-dropdown {
+  position: relative; }
+  .medc-dropdown .dropdown__content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    min-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; }
+  .medc-dropdown .dropdown__option {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.2s ease; }
+    .medc-dropdown .dropdown__option:hover {
+      background: #efefef; }
+  .medc-dropdown:hover .dropdown__content {
+    display: block; }
+  .medc-dropdown:hover .arrow-down {
+    border-top: 5px solid #002576; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  display: inherit;
+  transform: translateY(-1px);
+  margin-left: 5px;
+  transition: border-color 0.2s ease; }
 
 .medc-font--light-blue {
   color: #3faad4; }
