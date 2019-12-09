@@ -28,5 +28,17 @@
     font-weight: 300;
     margin-bottom: 1.6rem; }
 
+.medc-font--light-blue {
+  color: #3faad4; }
+
+.medc-font--blue {
+  color: #236faa; }
+
+.medc-font--dark-blue {
+  color: #083682; }
+
+.medc-font--light {
+  font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif; }
+
 body {
   background-color: #f5f5f5 !important; }
