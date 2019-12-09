@@ -1,0 +1,26 @@
+.account {
+
+    &__details {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        border-radius: 100%;
+        margin-right: .8rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    &__intro {
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: .9rem;
+    }
+
+    &__name {
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: #083682;
+    }
+}

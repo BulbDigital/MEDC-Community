@@ -1,0 +1,26 @@
+@mixin light-font {
+    font-family: "Avenir LT W01_35 Light1475496",
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+.medc {
+    &-font {
+        &--light-blue {
+            color: #3faad4;
+        }
+
+        &--blue {
+            color: #236faa;
+        }
+
+        &--dark-blue {
+            color: #083682;
+        }
+
+        &--light {
+            @include light-font();
+        }
+    }
+}
