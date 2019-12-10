@@ -7,6 +7,7 @@
 
     &__wrapper {
         overflow: hidden;
+        background-color: #FFF;
     }
 
     @include mq("tablet", "max") {

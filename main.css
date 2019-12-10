@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5 {
   @media only screen and (max-width: 767px) {
     .account {
       flex-direction: column; } }
+  .account__wrapper {
+    background-color: #FFF; }
   .account__main-content {
     display: flex;
     align-items: center; }
@@ -63,7 +65,8 @@ h1, h2, h3, h4, h5 {
   padding-bottom: 4rem;
   padding-top: 4rem; }
   .application-overview__wrapper {
-    overflow: hidden; }
+    overflow: hidden;
+    background-color: #FFF; }
   @media only screen and (max-width: 767px) {
     .application-overview {
       flex-direction: column; } }
@@ -197,6 +200,99 @@ h1, h2, h3, h4, h5 {
         margin-top: 1rem;
         margin-left: 0;
         justify-content: center; } }
+
+.medc-bg--gray {
+  background: #f5f5f5; }
+
+.medc-eyebrow {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  font-family: "Avenir LT W01_95 Black1475556", Helvetica, Arial, sans-serif; }
+
+.medc-circle-details {
+  display: flex;
+  flex-direction: column;
+  background: #083682;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+  .medc-circle-details span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: block;
+    line-height: 0.8rem;
+    width: 100%; }
+  .medc-circle-details .circle-detail--large {
+    font-size: 2rem;
+    line-height: 2rem; }
+
+.medc-form-header-card {
+  padding: 1.8rem 0; }
+
+.medc-form-header-actions {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.medc-form-card {
+  padding: 2rem;
+  background: white;
+  border: 1px solid #efefef;
+  border-radius: 12px;
+  margin-bottom: 1.8rem; }
+  .medc-form-card__title {
+    font-weight: 300;
+    margin-bottom: 1.2rem; }
+
+.medc-dropdown {
+  position: relative; }
+  .medc-dropdown .dropdown__content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    min-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; }
+  .medc-dropdown .dropdown__option {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.2s ease; }
+    .medc-dropdown .dropdown__option:hover {
+      background: #efefef; }
+  .medc-dropdown:hover .dropdown__content {
+    display: block; }
+  .medc-dropdown:hover .arrow-down {
+    border-top: 5px solid #002576; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  display: inherit;
+  transform: translateY(-1px);
+  margin-left: 5px;
+  transition: border-color 0.2s ease; }
+
+.medc-font--light-blue {
+  color: #3faad4; }
+
+.medc-font--blue {
+  color: #236faa; }
+
+.medc-font--dark-blue {
+  color: #083682; }
+
+.medc-font--light {
+  font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif; }
 
 .card-display {
   border-bottom: 3px solid #DDD;

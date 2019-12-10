@@ -17,29 +17,36 @@
 
 <body>
 
+
+  <!-- Account Card Begin -->
   <div class="card-display mt-5">
     <p class="card-display__title">Account Card</p>
 
-    <div class="container">
-      <div class="account">
-        <div class="account__main-content">
-          <img class="account__image" src="https://via.placeholder.com/150" />
-          <div>
-            <p class="account__intro">Happy Friday, Rebel Alliance</p>
-            <h3 class="account__name">Luke Skywalker</h3>
+    <div class="account__wrapper">
+
+      <div class="container">
+        <div class="account">
+          <div class="account__main-content">
+            <img class="account__image" src="https://via.placeholder.com/150" />
+            <div>
+              <p class="account__intro">Happy Friday, Rebel Alliance</p>
+              <h3 class="account__name">Luke Skywalker</h3>
+            </div>
+          </div>
+          <div class="account__action-content">
+            <button class="btn btn-light">View Account Profile</button>
           </div>
         </div>
-        <div class="account__action-content">
-          <button class="btn btn-light">View Account Profile</button>
-        </div>
+        <hr class="divider" />
       </div>
-      <hr class="divider" />
     </div>
   </div>
+  <!-- Account Card End -->
 
 
 
 
+  <!-- Application Overview Start -->
   <div class="card-display">
     <p class="card-display__title">Application Overview</p>
     <div class="application-overview__wrapper">
@@ -83,9 +90,11 @@
       </div>
     </div>
   </div>
+  <!-- Application Overview End -->
 
 
 
+  <!-- Project List Begin -->
   <div class="card-display">
     <p class="card-display__title">Project List</p>
 
@@ -94,6 +103,7 @@
         <h2 class="project-list__title">Available Assitance Programs</h2>
 
 
+        <!-- Project 1 -->
         <div class="project-list-item">
           <div class="project-list-item__top-detail">
             <p>Average Time to Complete <span class="project-list-item__time project-list-item__time--short">20Mins</span></p>
@@ -115,6 +125,7 @@
           </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="project-list-item">
           <div class="project-list-item__top-detail">
             <p>Average Time to Complete <span class="project-list-item__time project-list-item__time--medium">90Mins</span></p>
@@ -136,6 +147,7 @@
           </div>
         </div>
 
+        <!-- Project 3 -->
         <div class="project-list-item">
           <div class="project-list-item__top-detail">
             <p>Average Time to Complete <span class="project-list-item__time project-list-item__time--long">120Min</span></p>
@@ -156,7 +168,102 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project List End -->
 
+  <div class="card-display">
+    <p class="card-display__title">Form Display</p>
+    <div class="medc-bg--gray">
+
+      <div class="container">
+        <div class="medc-form-header-card">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row align-items-center">
+                <div class="col-md-auto">
+                  <div class="medc-circle-details">
+                    <span>Due</span>
+                    <span class="circle-detail--large">4</span>
+                    <span>Nov</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <span class="strong medc-eyebrow">
+                    MI-STEP-2019
+                  </span>
+                  <span class="strong medc-eyebrow">
+                    In Progress
+                  </span>
+                  <h3 class="medc-font--light">Reimbursement Milestone</h3>
+                </div>
+              </div>
+
+            </div>
+            <div class="col">
+              <div class="medc-form-header-actions">
+                <div class="medc-dropdown">
+                  <button class="btn btn-primary dropdown__button">Actions <i class="arrow-down"></i>
+                  </button>
+                  <div class="dropdown__content">
+                    <div class="dropdown__option">Print PDF</div>
+                    <div class="dropdown__option">Export to Excel</div>
+                    <div class="dropdown__option">Save for Later</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="medc-form-card">
+          <h4 class="medc-form-card__title medc-font--light medc-font--blue">Milestone Details</h4>
+          <div class="row">
+            <div class="col-md">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="medc-form-card">
+          <h4 class="medc-form-card__title medc-font--light medc-font--blue">Section Title</h4>
+          <div class="row">
+            <div class="col-md">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

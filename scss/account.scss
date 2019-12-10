@@ -8,6 +8,10 @@
         flex-direction: column;
     }
 
+    &__wrapper {
+        background-color: #FFF;
+    }
+
     &__main-content {
         display: flex;
         align-items: center;
