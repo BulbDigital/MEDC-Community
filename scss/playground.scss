@@ -1,0 +1,27 @@
+$main-color: #DDD;
+
+.card-display {
+    border-bottom: 3px solid $main-color;
+    border-top: 3px solid $main-color;
+    margin-bottom: 50px;
+    position: relative;
+
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__title {
+        position: absolute;
+        left: 10px;
+        bottom: 100%;
+        font-size: 1rem;
+        background-color: $main-color;
+        color: #000;
+        margin: 0;
+        padding: 5px 20px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        // border: 3px solid $main-color;
+
+    }
+}

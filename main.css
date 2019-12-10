@@ -16,31 +16,52 @@
 h1, h2, h3, h4, h5 {
   font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif; }
 
-.account__details {
+.account {
   display: flex;
-  align-items: center; }
-
-.account__image {
-  border-radius: 100%;
-  margin-right: .8rem;
-  width: 100px;
-  height: 100px; }
-
-.account__intro {
-  margin-bottom: 0;
-  font-weight: bold;
-  font-size: .9rem; }
-
-.account__name {
-  font-size: 2.2rem;
-  font-weight: 300;
-  color: #083682; }
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+  @media only screen and (max-width: 767px) {
+    .account {
+      flex-direction: column; } }
+  .account__main-content {
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .account__main-content {
+        margin-bottom: 3rem;
+        justify-content: center; } }
+  .account__action-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    @media only screen and (max-width: 767px) {
+      .account__action-content {
+        justify-content: center; } }
+  .account__details {
+    display: flex;
+    align-items: center; }
+  .account__image {
+    border-radius: 100%;
+    margin-right: .8rem;
+    width: 100px;
+    height: 100px; }
+  .account__intro {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: .9rem;
+    color: #142550; }
+  .account__name {
+    font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    color: #142550; }
 
 .application-overview {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  padding-top: 4rem; }
   .application-overview__wrapper {
     overflow: hidden; }
   @media only screen and (max-width: 767px) {
@@ -56,6 +77,10 @@ h1, h2, h3, h4, h5 {
     line-height: 14.6rem;
     font-family: "Avenir LT W01_95 Black1475556", Helvetica, Arial, sans-serif;
     color: #FAFAFA; }
+    @media only screen and (max-width: 767px) {
+      .application-overview__backdrop-text {
+        font-size: 14rem;
+        line-height: 9.8rem; } }
   .application-overview-item {
     display: flex;
     flex-direction: column;
@@ -93,3 +118,101 @@ h1, h2, h3, h4, h5 {
     .application-overview-item__body {
       font-size: 1.3rem;
       font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif; }
+
+.project-list__wrapper {
+  background-color: #F5F5F5;
+  padding: 3rem 0; }
+
+.project-list__title {
+  font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: #152650; }
+
+.project-list-item {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 3rem 2.5rem;
+  border-radius: 10px; }
+  .project-list-item:not(:last-child) {
+    margin-bottom: 2rem; }
+  .project-list-item__top-detail {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .9rem; }
+    .project-list-item__top-detail p {
+      margin: 0;
+      padding: 0; }
+    @media only screen and (max-width: 767px) {
+      .project-list-item__top-detail {
+        justify-content: center;
+        margin-bottom: 20px; } }
+  .project-list-item__time {
+    font-family: "Avenir LT W01_95 Black1475556", Helvetica, Arial, sans-serif; }
+    .project-list-item__time--short {
+      color: #88D03F; }
+    .project-list-item__time--medium {
+      color: #FC8C03; }
+    .project-list-item__time--long {
+      color: #FC2003; }
+  .project-list-item__main-content {
+    display: flex; }
+    @media only screen and (max-width: 767px) {
+      .project-list-item__main-content {
+        flex-wrap: wrap; } }
+  .project-list-item__center-content {
+    width: 60%; }
+    @media only screen and (max-width: 767px) {
+      .project-list-item__center-content {
+        width: 100%;
+        text-align: center; } }
+  .project-list-item__description {
+    margin-top: auto;
+    margin-bottom: 0;
+    font-size: .9rem;
+    line-height: 1.8rem; }
+  .project-list-item__image {
+    margin-right: 20px; }
+    @media only screen and (max-width: 767px) {
+      .project-list-item__image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 20px; } }
+  .project-list-item__title {
+    font-size: .9rem;
+    margin: 0; }
+  .project-list-item__sub-title {
+    font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase; }
+  .project-list-item__action-content {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto; }
+    @media only screen and (max-width: 767px) {
+      .project-list-item__action-content {
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0;
+        justify-content: center; } }
+
+.card-display {
+  border-bottom: 3px solid #DDD;
+  border-top: 3px solid #DDD;
+  margin-bottom: 50px;
+  position: relative; }
+  .card-display__wrapper {
+    width: 100%; }
+  .card-display__title {
+    position: absolute;
+    left: 10px;
+    bottom: 100%;
+    font-size: 1rem;
+    background-color: #DDD;
+    color: #000;
+    margin: 0;
+    padding: 5px 20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }

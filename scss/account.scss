@@ -1,4 +1,32 @@
 .account {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    
+    @include mq("tablet", "max") {
+        flex-direction: column;
+    }
+
+    &__main-content {
+        display: flex;
+        align-items: center;
+
+        @include mq("tablet", "max") {
+            margin-bottom: 3rem;
+            justify-content: center;
+        }
+    }
+
+    &__action-content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @include mq("tablet", "max") {
+            justify-content: center;
+        }
+    }
 
     &__details {
         display: flex;
@@ -16,11 +44,12 @@
         margin-bottom: 0;
         font-weight: bold;
         font-size: .9rem;
+        color: #142550;
     }
 
     &__name {
-        font-size: 2.2rem;
-        font-weight: 300;
-        color: #083682;
+        @include light-font();
+        font-size: 2rem;
+        color: #142550;
     }
 }

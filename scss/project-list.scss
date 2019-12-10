@@ -1,0 +1,113 @@
+.project-list {
+
+    &__wrapper {
+        background-color: #F5F5F5;
+        padding: 3rem 0;
+    }
+
+    &__title {
+        @include light-font();
+        font-size: 1rem;
+        color: #152650;
+    }
+
+    &-item {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 3rem 2.5rem;
+        border-radius: 10px;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        &__top-detail {
+            display: flex;
+            justify-content: flex-end;
+            font-size: .9rem;
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            @include mq("tablet", "max") {
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__time {
+            @include heavy-font();
+
+            &--short  { color: #88D03F; }
+            &--medium { color: #FC8C03; }
+            &--long   { color: #FC2003; }
+        }
+
+        &__main-content {
+            display: flex;
+
+            @include mq("tablet", "max") {
+                flex-wrap: wrap;
+            }
+        }
+
+        &__center-content {
+            width: 60%;
+
+            @include mq("tablet", "max") {
+                width: 100%;
+
+                text-align: center;
+            }
+        }
+
+        &__description {
+            margin-top: auto;
+            margin-bottom: 0;
+            font-size: .9rem;
+            line-height: 1.8rem;
+        }
+
+        &__image {
+            margin-right: 20px;
+
+            @include mq("tablet", "max") {
+                width: 100%;
+
+                display: flex;
+                justify-content: center;
+
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__title {
+            font-size: .9rem;
+            margin: 0;
+        }
+
+        &__sub-title {
+            @include light-font();
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
+
+        &__action-content {
+            display: flex;
+            align-items: flex-end;
+            margin-left: auto;
+
+            @include mq("tablet", "max") {
+                width: 100%;
+                margin-top: 1rem;
+                margin-left: 0;
+                justify-content: center;
+            }
+        }
+
+    }
+}

@@ -16,24 +16,21 @@
 </head>
 
 <body>
-  <div class="container">
-    <h2 class="mb-5">Account Card</h2>
-  </div>
 
-  <div>
+  <div class="card-display mt-5">
+    <p class="card-display__title">Account Card</p>
+
     <div class="container">
-      <div class="d-flex justify-content-between flex-column flex-md-row mb-5">
-        <div>
-          <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-5 mb-md-0">
-            <img class="account__image" src="https://via.placeholder.com/150" />
-            <div>
-              <p class="account__intro">Happy Friday, Rebel Alliance</p>
-              <h3 class="account__name">Luke Skywalker</h3>
-            </div>
+      <div class="account">
+        <div class="account__main-content">
+          <img class="account__image" src="https://via.placeholder.com/150" />
+          <div>
+            <p class="account__intro">Happy Friday, Rebel Alliance</p>
+            <h3 class="account__name">Luke Skywalker</h3>
           </div>
         </div>
-        <div class="d-flex align-items-center justify-content-center justify-content-md-end">
-          <button class="btn btn-light float-right">View Account Profile</button>
+        <div class="account__action-content">
+          <button class="btn btn-light">View Account Profile</button>
         </div>
       </div>
       <hr class="divider" />
@@ -42,49 +39,125 @@
 
 
 
-  <div class="container">
-    <h2 class="mb-5">Application Overview</h2>
+
+  <div class="card-display">
+    <p class="card-display__title">Application Overview</p>
+    <div class="application-overview__wrapper">
+
+      <div class="container">
+        <div class="application-overview">
+
+          <p class="application-overview__backdrop-text">Welcome</p>
+
+          <div class="application-overview-item">
+            <div class="application-overview-item__header">
+              <span class="application-overview-item__number application-overview-item__number--light">1</span>
+              <h4 class="application-overview-item__title">Apply</h4>
+            </div>
+
+            <p class="application-overview-item__body">Get started by completing the project information / pre-applications process.</p>
+
+          </div>
+
+          <div class="application-overview-item">
+            <div class="application-overview-item__header">
+              <span class="application-overview-item__number application-overview-item__number--medium">2</span>
+              <h4 class="application-overview-item__title">Review</h4>
+            </div>
+
+            <p class="application-overview-item__body">MEDC will match you with the programs that fit your needs.</p>
+
+          </div>
+
+          <div class="application-overview-item">
+            <div class="application-overview-item__header">
+              <span class="application-overview-item__number application-overview-item__number--dark">3</span>
+              <h4 class="application-overview-item__title">Notified</h4>
+            </div>
+
+            <p class="application-overview-item__body">You'll be notified via email - with access to the programs you qualify for.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
 
-  <div class="application-overview__wrapper">
 
-    <div class="container">
-      <div class="application-overview">
+  <div class="card-display">
+    <p class="card-display__title">Project List</p>
 
-        <p class="application-overview__backdrop-text">Welcome</p>
+    <div class="project-list__wrapper">
+      <div class="container">
+        <h2 class="project-list__title">Available Assitance Programs</h2>
 
-        <div class="application-overview-item">
-          <div class="application-overview-item__header">
-            <span class="application-overview-item__number application-overview-item__number--light">1</span>
-            <h4 class="application-overview-item__title">Apply</h4>
+
+        <div class="project-list-item">
+          <div class="project-list-item__top-detail">
+            <p>Average Time to Complete <span class="project-list-item__time project-list-item__time--short">20Mins</span></p>
           </div>
+          <div class="project-list-item__main-content">
 
-          <p class="application-overview-item__body">Get started by completing the project information / pre-applications process.</p>
+            <div class="project-list-item__image">
+              <img src="images/project-bridge.png" alt="Project Icon for International Trade MI-PEP-2019" />
+            </div>
+            <div class="project-list-item__center-content">
+              <h3 class="project-list-item__title">International Trade MI-PEP-2019</h3>
+              <p class="project-list-item__sub-title">Step Grant</p>
+              <p class="project-list-item__description">The MI-PEP provides direction reimbursements to eligible companies to develop or expand export-related activities.</p>
+            </div>
 
+            <div class="project-list-item__action-content">
+              <button class="btn btn-primary">Apply</button>
+            </div>
+          </div>
         </div>
 
-        <div class="application-overview-item">
-          <div class="application-overview-item__header">
-            <span class="application-overview-item__number application-overview-item__number--medium">2</span>
-            <h4 class="application-overview-item__title">Review</h4>
+        <div class="project-list-item">
+          <div class="project-list-item__top-detail">
+            <p>Average Time to Complete <span class="project-list-item__time project-list-item__time--medium">90Mins</span></p>
           </div>
+          <div class="project-list-item__main-content">
 
-          <p class="application-overview-item__body">MEDC will match you with the programs that fit your needs.</p>
+            <div class="project-list-item__image">
+              <img src="images/project-bridge.png" alt="Project Icon for International Trade MI-PEP-2019" />
+            </div>
+            <div class="project-list-item__center-content">
+              <h3 class="project-list-item__title">International Trade MI-PEP-2019</h3>
+              <p class="project-list-item__sub-title">Step Grant</p>
+              <p class="project-list-item__description">The MI-PEP provides direction reimbursements to eligible companies to develop or expand export-related activities.</p>
+            </div>
 
+            <div class="project-list-item__action-content">
+              <button class="btn btn-primary">Apply</button>
+            </div>
+          </div>
         </div>
 
-        <div class="application-overview-item">
-          <div class="application-overview-item__header">
-            <span class="application-overview-item__number application-overview-item__number--dark">3</span>
-            <h4 class="application-overview-item__title">Notified</h4>
+        <div class="project-list-item">
+          <div class="project-list-item__top-detail">
+            <p>Average Time to Complete <span class="project-list-item__time project-list-item__time--long">120Min</span></p>
           </div>
+          <div class="project-list-item__main-content">
 
-          <p class="application-overview-item__body">You'll be notified via email - with access to the programs you qualify for.</p>
+            <div class="project-list-item__image">
+              <img src="images/project-bridge.png" alt="Project Icon for International Trade MI-PEP-2019" />
+            </div>
+            <div class="project-list-item__center-content">
+              <h3 class="project-list-item__title">International Trade MI-PEP-2019</h3>
+              <p class="project-list-item__sub-title">Step Grant</p>
+              <p class="project-list-item__description">The MI-PEP provides direction reimbursements to eligible companies to develop or expand export-related activities.</p>
+            </div>
 
+            <div class="project-list-item__action-content">
+              <button class="btn btn-primary">Apply</button>
+            </div>
+          </div>
         </div>
+
       </div>
-
     </div>
   </div>
 
