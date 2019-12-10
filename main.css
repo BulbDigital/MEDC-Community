@@ -204,32 +204,6 @@ h1, h2, h3, h4, h5 {
 .medc-bg--gray {
   background: #f5f5f5; }
 
-.medc-eyebrow {
-  margin-right: 1rem;
-  font-size: 0.9rem;
-  font-family: "Avenir LT W01_95 Black1475556", Helvetica, Arial, sans-serif; }
-
-.medc-circle-details {
-  display: flex;
-  flex-direction: column;
-  background: #083682;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  color: white; }
-  .medc-circle-details span {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    display: block;
-    line-height: 0.8rem;
-    width: 100%; }
-  .medc-circle-details .circle-detail--large {
-    font-size: 2rem;
-    line-height: 2rem; }
-
 .medc-form-header-card {
   padding: 1.8rem 0; }
 
@@ -244,7 +218,7 @@ h1, h2, h3, h4, h5 {
   background: white;
   border: 1px solid #efefef;
   border-radius: 12px;
-  margin-bottom: 1.8rem; }
+  margin-bottom: 2rem; }
   .medc-form-card__title {
     font-weight: 300;
     margin-bottom: 1.2rem; }
@@ -270,6 +244,66 @@ h1, h2, h3, h4, h5 {
     display: block; }
   .medc-dropdown:hover .arrow-down {
     border-top: 5px solid #002576; }
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 767px) {
+    .form-header {
+      flex-direction: column; } }
+  .form-header__main-content {
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .form-header__main-content {
+        margin-bottom: 3rem;
+        justify-content: center; } }
+  .form-header__action-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    @media only screen and (max-width: 767px) {
+      .form-header__action-content {
+        justify-content: center; } }
+  .form-header__details {
+    margin-right: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    background: #083682;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+    .form-header__details span {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      display: block;
+      line-height: 0.8rem;
+      width: 100%; }
+    .form-header__details .circle-detail--large {
+      font-size: 2rem;
+      line-height: 2rem; }
+  .form-header__image {
+    border-radius: 100%;
+    margin-right: .8rem;
+    width: 100px;
+    height: 100px; }
+  .form-header__intro {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: .9rem;
+    color: #142550; }
+  .form-header__name {
+    font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    color: #142550; }
+
+.form__wrapper {
+  padding: 3rem 0; }
 
 .arrow-down {
   width: 0;
