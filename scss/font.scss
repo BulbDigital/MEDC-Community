@@ -5,6 +5,13 @@
         sans-serif;
 }
 
+@mixin heavy-font {
+    font-family: "Avenir LT W01_95 Black1475556",
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
 .medc {
     &-font {
         &--light-blue {

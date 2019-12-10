@@ -1,0 +1,80 @@
+.application-overview {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+
+    &__wrapper {
+        overflow: hidden;
+    }
+
+    @include mq("tablet", "max") {
+        flex-direction: column;
+    }
+
+    &__backdrop-text {
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        z-index: 1;
+
+        font-size: 22rem;
+        line-height: 14.6rem;
+        @include heavy-font();
+        color: #FAFAFA;
+    }
+
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        color: #13244F;
+        padding-right: 3.2rem;
+        position: relative;
+        z-index: 2;
+
+        @include mq("tablet", "max") {
+            margin-bottom: 20px;
+        }
+
+        &__header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        &__title {
+            font-size: 1.3rem;
+        }
+
+        &__number {
+            background-color: blue;
+
+            @include light-font();
+            color: white;
+
+            border-radius: 100%;
+            width: 3.8rem;
+            height: 3.8rem;
+            display: inline-flex;
+
+            margin-right: 20px;
+
+            justify-content: center;
+            align-items: center;
+
+            font-size: 1.8rem;
+
+            &--light  { background-color: #5DA9D0; }
+            &--medium { background-color: #386FA5; }
+            &--dark   { background-color: #14387D; }
+        }
+
+        &__body {
+            font-size: 1.3rem;
+            @include light-font();
+        }
+    }
+}

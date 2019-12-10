@@ -35,3 +35,61 @@ h1, h2, h3, h4, h5 {
   font-size: 2.2rem;
   font-weight: 300;
   color: #083682; }
+
+.application-overview {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem; }
+  .application-overview__wrapper {
+    overflow: hidden; }
+  @media only screen and (max-width: 767px) {
+    .application-overview {
+      flex-direction: column; } }
+  .application-overview__backdrop-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 1;
+    font-size: 22rem;
+    line-height: 14.6rem;
+    font-family: "Avenir LT W01_95 Black1475556", Helvetica, Arial, sans-serif;
+    color: #FAFAFA; }
+  .application-overview-item {
+    display: flex;
+    flex-direction: column;
+    color: #13244F;
+    padding-right: 3.2rem;
+    position: relative;
+    z-index: 2; }
+    @media only screen and (max-width: 767px) {
+      .application-overview-item {
+        margin-bottom: 20px; } }
+    .application-overview-item__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px; }
+    .application-overview-item__title {
+      font-size: 1.3rem; }
+    .application-overview-item__number {
+      background-color: blue;
+      font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif;
+      color: white;
+      border-radius: 100%;
+      width: 3.8rem;
+      height: 3.8rem;
+      display: inline-flex;
+      margin-right: 20px;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem; }
+      .application-overview-item__number--light {
+        background-color: #5DA9D0; }
+      .application-overview-item__number--medium {
+        background-color: #386FA5; }
+      .application-overview-item__number--dark {
+        background-color: #14387D; }
+    .application-overview-item__body {
+      font-size: 1.3rem;
+      font-family: "Avenir LT W01_35 Light1475496", Helvetica, Arial, sans-serif; }
