@@ -17,10 +17,7 @@
         flex-direction: column;
         padding: 1.5rem 3rem 2.5rem;
         border-radius: 10px;
-
-        &:not(:last-child) {
-            margin-bottom: 2rem;
-        }
+        margin-bottom: 2rem;
 
         &__top-detail {
             display: flex;

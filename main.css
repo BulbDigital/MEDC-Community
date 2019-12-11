@@ -136,9 +136,8 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 3rem 2.5rem;
-  border-radius: 10px; }
-  .project-list-item:not(:last-child) {
-    margin-bottom: 2rem; }
+  border-radius: 10px;
+  margin-bottom: 2rem; }
   .project-list-item__top-detail {
     display: flex;
     justify-content: flex-end;
