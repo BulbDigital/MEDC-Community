@@ -3,30 +3,6 @@
         background: #f5f5f5;
     }
 
-    &-form-header-card {
-        padding: 1.8rem 0;
-    }
-
-    &-form-header-actions {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    &-form-card {
-        padding: 2rem;
-        background: white;
-        border: 1px solid #efefef;
-        border-radius: 12px;
-        margin-bottom: 2rem;
-
-        &__title {
-            font-weight: 300;
-            margin-bottom: 1.2rem;
-        }
-    }
-
     &-dropdown {
         position: relative;
 
@@ -64,86 +40,18 @@
                 border-top: 5px solid #002576;
             }
         }
-    }
-}
 
-.form-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-
-    @include mq("tablet", "max") {
-        flex-direction: column;
-    }
-
-
-    &__main-content {
-        display: flex;
-        align-items: center;
-
-        @include mq("tablet", "max") {
-            margin-bottom: 3rem;
-            justify-content: center;
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+            display: inherit;
+            transform: translateY(-1px);
+            margin-left: 5px;
+            transition: border-color 0.2s ease;
         }
-    }
-
-    &__action-content {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        @include mq("tablet", "max") {
-            justify-content: center;
-        }
-    }
-
-    &__details {
-        margin-right: 0.8rem;
-        display: flex;
-        flex-direction: column;
-        background: #083682;
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        color: white;
-
-        span {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            display: block;
-            line-height: 0.8rem;
-            width: 100%;
-        }
-
-        .circle-detail {
-            &--large {
-                font-size: 2rem;
-                line-height: 2rem;
-            }
-        }
-    }
-
-    &__image {
-        border-radius: 100%;
-        margin-right: .8rem;
-        width: 100px;
-        height: 100px;
-    }
-
-    &__intro {
-        margin-bottom: 0;
-        font-weight: bold;
-        font-size: .9rem;
-        color: #142550;
-    }
-
-    &__name {
-        @include light-font();
-        font-size: 2rem;
-        color: #142550;
     }
 }
 
@@ -151,16 +59,103 @@
     &__wrapper{
         padding: 3rem 0;
     }
-}
 
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid white;
-    display: inherit;
-    transform: translateY(-1px);
-    margin-left: 5px;
-    transition: border-color 0.2s ease;
+    &__card {
+        padding: 2rem;
+        background: white;
+        border: 1px solid #efefef;
+        border-radius: 12px;
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__card-title {
+        font-weight: 300;
+        margin-bottom: 1.2rem;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        @include mq("tablet", "max") {
+            flex-direction: column;
+        }
+
+
+        &__main-content {
+            display: flex;
+            align-items: center;
+
+            @include mq("tablet", "max") {
+                margin-bottom: 3rem;
+                justify-content: center;
+            }
+        }
+
+        &__action-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            @include mq("tablet", "max") {
+                justify-content: center;
+            }
+        }
+
+        &__details {
+            margin-right: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            background: #083682;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: white;
+
+            span {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                display: block;
+                line-height: 0.8rem;
+                width: 100%;
+            }
+
+            .circle-detail {
+                &--large {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+
+        &__image {
+            border-radius: 100%;
+            margin-right: .8rem;
+            width: 100px;
+            height: 100px;
+        }
+
+        &__intro {
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: .9rem;
+            color: #142550;
+            span{
+                margin-right: 1rem;
+            }
+        }
+
+        &__name {
+            @include light-font();
+            font-size: 2rem;
+            color: #142550;
+        }
+    }
 }
