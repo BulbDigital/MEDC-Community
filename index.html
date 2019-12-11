@@ -182,9 +182,10 @@
   </div>
   <!-- Project List End -->
 
+  <!-- Form Begin -->
   <div class="card-display">
     <p class="card-display__title">Form Display</p>
-    <div class="medc-bg--gray">
+    <div class="medc-bg--gray form__wrapper">
 
       <div class="container">
         <div class="form-header">
@@ -195,7 +196,7 @@
               <span>Nov</span>
             </div>
             <div>
-              <p class="form-header__intro">MI-STEP-2019</p>
+              <p class="form-header__intro"><span>MI-STEP-2019</span><span>In Progress</span></p>
               <h3 class="form-header__name">Reimbursement Milestone</h3>
             </div>
           </div>
@@ -215,8 +216,8 @@
 
 
       <div class="container">
-        <div class="medc-form-card">
-          <h4 class="medc-form-card__title medc-font--light medc-font--blue">Milestone Details</h4>
+        <div class="form__card">
+          <h4 class="form__card-title medc-font--light medc-font--blue">Milestone Details</h4>
           <div class="row">
             <div class="col-md">
               <div class="form-group">
@@ -247,12 +248,8 @@
             </div>
           </div>
         </div>
-      </div>
-
-
-      <div class="container">
-        <div class="medc-form-card">
-          <h4 class="medc-form-card__title medc-font--light medc-font--blue">Section Title</h4>
+        <div class="form__card">
+          <h4 class="form__card-title medc-font--light medc-font--blue">Section Title</h4>
           <div class="row">
             <div class="col-md">
               <div class="form-group">
@@ -265,7 +262,24 @@
       </div>
     </div>
   </div>
+  <!-- Form End -->
 
+  <!-- Form Footer Begin -->
+  <div class="card-display">
+    <p class="card-display__title">Form Footer</p>
+    <!-- remove form-footer--inline to fix the position to the bottom of the page -->
+    <div class="form-footer form-footer--inline">
+      <div class="container form-footer__container">
+        <div class="form-footer__left-container">
+          <button class="btn btn-default">Cancel</button>
+        </div>
+        <div class="form-footer__right-container">
+          <button class="btn btn-primary">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Form Footer End -->
 </body>
 
 </html>
