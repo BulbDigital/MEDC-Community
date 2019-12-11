@@ -158,4 +158,23 @@
             color: #142550;
         }
     }
+
+    &-footer{
+        height: 120px;
+        background: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+        &--inline{
+            position: relative;
+        }
+
+        &__container{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 }

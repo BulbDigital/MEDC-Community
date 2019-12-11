@@ -310,6 +310,20 @@ h1, h2, h3, h4, h5 {
     font-size: 2rem;
     color: #142550; }
 
+.form-footer {
+  height: 120px;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  .form-footer--inline {
+    position: relative; }
+  .form-footer__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
 .medc-font--light-blue {
   color: #3faad4; }
 
